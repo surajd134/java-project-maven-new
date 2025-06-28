@@ -74,7 +74,7 @@
     </div>
 
     <!-- ------------------ Recommendation ------------------ -->
-    <h1 class="title">recommended for you Specially !!</h1>
+    <h1 class="title">!!! Recommended for you Specially !!!</h1>
     <div class="movies-list">
         <button class="pre-btn"><img src="./assets/img/pre.png" alt=""></button>
         <button class="nxt-btn"><img src="./assets/img/nxt.png" alt=""></button>
