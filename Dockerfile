@@ -1,4 +1,5 @@
-FROM nginx
-RUN rm -rf /usr/share/jenkins/html/
-COPY /k8s-project/target//myapp.war /usr/share/jenkins/html/
-CMD ["nginx", "-g", "daemon off;"]
+FROM tomcat:9-jdk17
+RUN rm -rf /usr/local/tomcat/webapps/*
+COPY target/myapp.war /usr/local/tomcat/webapps/
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
