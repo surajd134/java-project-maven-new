@@ -1,5 +1,4 @@
-FROM tomcat:9-jdk17
-RUN rm -rf /usr/local/tomcat/webapps/*
-COPY target/myapp.war /usr/local/tomcat/webapps/
-EXPOSE 8080
-CMD ["catalina.sh", "run"]
+FROM nginx
+RUN rm -rf /usr/share/nginx/html/*
+COPY target/myapp.war /usr/share/nginx/html
+CMD ["nginx", "-g", "daemon off;"]
