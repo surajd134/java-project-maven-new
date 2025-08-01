@@ -1,1 +1,5 @@
+GIVE PERMISSIONS
 
+chmod 777 /var/run/docker.sock
+systemctl daemon-reload
+systemctl restart docker.service
